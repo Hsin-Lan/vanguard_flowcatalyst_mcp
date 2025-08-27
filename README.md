@@ -12,3 +12,6 @@ python version 3.13.2
 cf push -u http --endpoint /health
 
 mount your mcp to ASGI app: https://gofastmcp.com/integrations/starlette
+https://modelcontextprotocol.io/specification/2025-03-26/basic/transports
+
+ollama serve

@@ -1,10 +1,9 @@
 ---
 applications:
-- name: vanguard_flowcatalyst_mcp
-  random-route: true
+- name: vanguard_flowcatalyst
+  random-route: false
   path: ./
   buildpack: https://github.com/cloudfoundry/python-buildpack.git#v1.8.33
   command: uvicorn server:app --host 0.0.0.0 --port 8080
   health-check-type: http
   health-check-http-endpoint: /mcp-server/health
-
