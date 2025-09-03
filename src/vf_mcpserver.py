@@ -17,9 +17,19 @@ async def health_check(request: Request):
     return JSONResponse({"status": "healthy"})
 
 @vf_mcp.tool
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+
+@vf_mcp.tool
 def get_blocker_by_blocker_title(blocker_title: str) -> str | None:
     """
     Retrieve blocker information by blocker title.
+    
+    Args:
+        blocker_title (str): blocker title
+    
+    Returns:
+        str: blocker information 
     """
     
     # make a request to ChromaDB

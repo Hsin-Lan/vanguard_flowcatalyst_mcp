@@ -2,7 +2,7 @@ import chromadb
 
 class ChromaHandler:
     def __init__(self):
-        self.chroma_client = chromadb.PersistentClient(path="src\chroma")
+        self.chroma_client = chromadb.PersistentClient(path="src/chroma")
         if not self.chroma_client.heartbeat():
             self.collection = None
             return
