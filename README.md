@@ -15,3 +15,5 @@ mount your mcp to ASGI app: https://gofastmcp.com/integrations/starlette
 https://modelcontextprotocol.io/specification/2025-03-26/basic/transports
 
 ollama serve
+
+>python -m ipykernel install --user --name=.venv --display-name "vfm-env"

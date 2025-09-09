@@ -2,3 +2,4 @@ fastmcp==2.11.3
 uvicorn==0.35.0
 starlette==0.47.2
 chromadb==1.0.18
+Levenshtein==0.27.1
